@@ -38,7 +38,7 @@ end
 -- @param player - The burglar.
 --
 local function forceWindow(worldobjects, window, player)
-    local time = 25;
+    local time = 100;
     if luautils.walkToObject(player, window) then
         local storePrim = luautils.equipItems(player, "Base.Crowbar");
         ISTimedActionQueue.add(TABreakWindowLock:new(player, window, time, storePrim));
